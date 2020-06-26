@@ -2,58 +2,95 @@
 <html>
 <head>
 	<title>My Quiz</title>
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- linking external style sheet -->
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- font style -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 
 	<!-- Header section -->
 	<header>
-		<img src="images/quiz.png" alt="Logo" width="100px" height="100px;">
-		<h1>MyQuiz</h1>
-		<nav>
-			<ul>
-				<li> <a href="#">HOME</a> </li>
-				<li> <a href="#">ABOUT</a> </li>
-				<li> <a href="#">QUIZZES</a> </li>
-				<li> <a href="#">CREATE QUIZ</a> </li>
-				<li> <a href="#">LOGIN</a> </li>+
-				<li> <a href="#">HELP</a> </li>
-			</ul>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="img">
+				<img src="images/quiz.png" alt="Logo" width="80px" height="80px;">
+			</div>
+			<h1>MyQuiz</h1>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				</ul>
+
+				<ul class="navbar-nav mt-2 mt-lg-0">
+					<li> 
+						<a href="#">HOME</a> 
+					</li>
+					<li> 
+						<a href="#">ABOUT</a> 
+					</li>
+					<li> 
+						<a href="#">QUIZZES</a> 
+					</li>
+					<li> 
+						<a href="#">CREATE QUIZ</a> 
+					</li>
+					<li> 
+						<a href="#">LOGIN</a> 
+					</li>
+					<li> 
+						<a href="#">HELP</a> 
+					</li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 
 	<!-- Home Section -->
-	<section>
+	<section class="container mt-3">
 		<h2>HOME</h2>
 		<hr>
-		<div>
-			<p>Participate in various quiz competitions. Compete! Win!</p>
-			<form>
-				<h4>PARTICIPANT LOGIN</h4>	
-				<input type="text" name="p_username" placeholder="username">
-				<input type="password" name="p_password" placeholder="password">
-				<input type="submit" name="p_submit" value="LOGIN">
-			</form>
-		</div>
+		
+		<div class="row">
+			<div class="col-sm-5">
+				<p>Participate in various quiz competitions. Compete! Win!</p>
+				<form>
+					<h4>PARTICIPANT LOGIN</h4>	
+					<input type="text" name="p_username" placeholder="username">
+					<input type="password" name="p_password" placeholder="password">
+					<input type="submit" name="p_submit" value="LOGIN">
+				</form>
+			</div>
 
-		<div>
-			OR
-		</div>
+			<div class="col-sm-2">
+				OR
+			</div>
 
-		<div>
-			<p>Be the Quiz Master. Make your own Quiz and conduct it online.</p>
-			<form>
-				<h4>QUIZ MASTER LOGIN</h4>	
-				<input type="text" name="m_username" placeholder="username">
-				<input type="password" name="m_password" placeholder="password">
-				<input type="submit" name="m_submit" value="LOGIN">
-			</form>
+			<div class="col-sm-5">
+				<p>Be the Quiz Master. Make your own Quiz and conduct it online.</p>
+				<form>
+					<h4>QUIZ MASTER LOGIN</h4>	
+					<input type="text" name="m_username" placeholder="username">
+					<input type="password" name="m_password" placeholder="password">
+					<input type="submit" name="m_submit" value="LOGIN">
+				</form>
+			</div>
 		</div>
 
 	</section>
 
 	<!-- About Section -->
-	<section>
+	<section class="container mt-5">
 		<h2>ABOUT</h2>
 		<hr>
 		<p>MyQuiz platform helps you to build free public or private quiz competitions and conduct it online. Participants can register in the quiz and compete with others. Automatic and manual computation of the quiz can be done by the quiz master.</p>
@@ -82,7 +119,7 @@
 	</section>
 
 	<!-- Quizzes section -->
-	<section>
+	<section class="container mt-5">
 		<h2>QUIZZES</h2>
 		<hr>
 		<p>You can view all the upcoming quizzes.</p>
@@ -157,7 +194,7 @@
 	</section>
 
 	<!-- Create Quiz Section -->
-	<section>
+	<section class="container mt-5">
 		<h2>Create Quiz</h2>
 		<hr>
 		<p>Make your own quiz. Be the quiz Master.</p>
@@ -171,7 +208,7 @@
 	</section>
 
 	<!-- Help Section -->
-	<section>
+	<section class="container mt-5">
 		<h2>HELP</h2>
 		<p>We are always here to help you.</p>
 
@@ -201,7 +238,7 @@
 	</section>
 
 	<!-- Feedback form -->
-	<section>
+	<section class="container mt-5">
 		<h2>Feedback</h2>
 		<hr>
 		<div>
@@ -265,6 +302,12 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 </body>
 </html>
