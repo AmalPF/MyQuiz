@@ -1,7 +1,16 @@
+/* overall website */
 *{
 	font-family: Montserrat;
 }
 
+hr{
+	border: 2px solid grey;
+  	border-radius: 10px;
+  	margin-top: 0;
+}
+
+
+/* Header Section */
 header{
 	background-color: #1C2934;
 	color: white;
@@ -43,8 +52,6 @@ header li a:hover{
 	color: orange;
 }
 
-hr{
-	border: 2px solid grey;
-  	border-radius: 10px;
-  	margin-top: 0;
-}
+
+/* Home Section */
+ 
