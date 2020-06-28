@@ -12,6 +12,7 @@
 
     <!-- linking external style sheet -->
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/-->font-awesome.css">
 
 	<!-- font style -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
@@ -57,32 +58,63 @@
 	</header>
 
 	<!-- Home Section -->
-	<section class="container mt-3">
+	<section id="home" class="container mt-3">
 		<h2>HOME</h2>
 		<hr>
 		
 		<div class="row">
 			<div class="col-sm-5">
 				<p>Participate in various quiz competitions. Compete! Win!</p>
-				<form>
-					<h4>PARTICIPANT LOGIN</h4>	
-					<input type="text" name="p_username" placeholder="username">
-					<input type="password" name="p_password" placeholder="password">
-					<input type="submit" name="p_submit" value="LOGIN">
+				<form>					
+					<div id="participant" class="grid-container">
+						<div class="item1">
+							<h4>PARTICIPANT LOGIN</h4>
+						</div>
+  						<div class="item1">
+  							<input type="text" name="p_username" placeholder="username">
+  							<!--<i class="fa fa-user" aria-hidden="true"></i>-->
+  						</div>
+  						<div class="item1">
+							<input type="password" name="p_password" placeholder="password">
+						</div>
+  						<div class="item1">
+  							<input id="p_login" type="submit" name="p_submit" value="LOGIN">
+  						</div>  
+					</div>
 				</form>
 			</div>
 
-			<div class="col-sm-2">
-				OR
+			<div class="col-sm-2" style="margin: 0; top: 50%;">
+				<div class="grid-container">
+  					<div class="item1">
+  						<div id="or_line1" style="border-left: 5px solid #bbb; height: 120px; position: relative; left: 50%;"></div>
+  					</div>
+  					<div class="item1">							
+  						OR
+					</div>
+  					<div class="item1">
+  						<div id="or_line2" style="border-left: 5px solid #bbb; height: 120px; position: relative; left: 50%;"></div>
+  					</div>  
+				</div>
 			</div>
 
 			<div class="col-sm-5">
 				<p>Be the Quiz Master. Make your own Quiz and conduct it online.</p>
 				<form>
-					<h4>QUIZ MASTER LOGIN</h4>	
-					<input type="text" name="m_username" placeholder="username">
-					<input type="password" name="m_password" placeholder="password">
-					<input type="submit" name="m_submit" value="LOGIN">
+					<div id="master" class="grid-container">
+						<div class="item1">
+							<h4>QUIZ MASTER LOGIN</h4>
+						</div>
+  						<div class="item1">
+  							<input type="text" name="m_username" placeholder="username">
+  						</div>
+  						<div class="item1">
+							<input type="password" name="m_password" placeholder="password">
+						</div>
+  						<div class="item1">
+  							<input id="m_login" type="submit" name="m_submit" value="LOGIN">
+  						</div>  
+					</div>
 				</form>
 			</div>
 		</div>
@@ -90,126 +122,236 @@
 	</section>
 
 	<!-- About Section -->
-	<section class="container mt-5">
+	<section id="about" class="container">
 		<h2>ABOUT</h2>
 		<hr>
 		<p>MyQuiz platform helps you to build free public or private quiz competitions and conduct it online. Participants can register in the quiz and compete with others. Automatic and manual computation of the quiz can be done by the quiz master.</p>
 
-		<div>
-			<div>
-				<img src="images/male-profile-1.png" alt="profile" height="150px" width="150px">
-				<label>Name1</label>
-				<p>Co-Founder & CEO</p>
-				<p>"Now you can make quiz or participate in any quiz from anywhere in the world."</p>
+		<div style="text-align: center;">
+			<div class="card" style="display: inline-block; width: 18rem; margin: 10px;">
+  				<div style="text-align: center; padding-top: 30px;">
+  					<img src="images/male-profile-1.png" alt="profile" height="150px" width="150px">
+  				</div>
+  				<div class="card-body" style="text-align: center; margin-top: 0;">
+  					<label class="card-text"><b>Name1</b></label>
+					<p class="card-text" style="color:dodgerBlue">Co-Founder & CEO</p>
+					<p style="color:#999;"><i>"Now you can make quiz or participate in any quiz from anywhere in the world."</i></p>
+  				</div>
 			</div>
-			<div>
-				<img src="images/female-profile-1.png" alt="profile" height="150px" width="150px">
-				<label>Name2</label>
-				<p>Co-Founder</p>
-				<p>"We have made it easy for everyone to make quiz and conduct them."</p>
+			<div class="card" style="display: inline-block; width: 18rem; margin: 10px;">
+  				<div style="text-align: center; padding-top: 30px;">
+  					<img src="images/female-profile-1.png" alt="profile" height="150px" width="150px">
+  				</div>
+  				<div class="card-body" style="text-align: center; margin-top: 0;">
+  					<label class="card-text"><b>Name2</b></label>
+					<p class="card-text" style="color:dodgerBlue">Co-Founder</p>
+					<p style="color:#999;"><i>"We have made it easy for everyone to make quiz and conduct them."</i></p>
+  				</div>
 			</div>
-			<div>
-				<img src="images/male-profile-2.png" alt="profile" height="150px" width="150px">
-				<label>Name3</label>
-				<p>Admin</p>
-				<p>"."</p>
+			<div class="card" style="display: inline-block; width: 18rem; margin: 10px;">
+  				<div style="text-align: center; padding-top: 30px;">
+					<img src="images/male-profile-2.png" alt="profile" height="150px" width="150px">  				
+				</div>
+  				<div class="card-body" style="text-align: center; margin-top: 0;">
+  					<label class="card-text"><b>Name3</b></label>
+					<p class="card-text" style="color:dodgerBlue">Admin</p>
+					<p style="color:#999;"><i>"Now you can make quiz or participate in any quiz from anywhere in the world."</i></p>
+  				</div>
 			</div>
 		</div>
 
 	</section>
 
 	<!-- Quizzes section -->
-	<section class="container mt-5">
+	<section id="quizzes" class="container">
 		<h2>QUIZZES</h2>
 		<hr>
 		<p>You can view all the upcoming quizzes.</p>
 		<a href="#">Upcoming</a>
 		<a href="#">Old</a>
-		<hr>
 
 		<!-- List of Quizzes hosted -->
-		<div>
+		<div style="padding: 10px;">
 			<!-- Quiz Competiton Details -->
-			<div>
-				<label>Date</label>
-				<label>Time</label>
+			<div class="quiz_card">
+				<label style="background-color: green">Date</label>
+				<label style="background-color: green">Time</label>
 				<h3>Name of Quiz</h3>
 				<p>Rules of the quiz</p>
 				<ul>
 					<li>30 mins</li>
 					<li>Anything</li>
 				</ul>
-				<label>Rate/-</label>
+				<label style="background-color: orange">Rate/-</label>
 				<ul>
 					<li>topic1</li>
 					<li>topic2</li>
 					<li>topic3</li>
 				</ul>
-				<a href="#">more</a>
-				<img src="images/contact-icon-1.png" width="20px" height="20px">
-				Name of Quiz master
-				<button>REGISTER</button>
+				<div style="text-align: right; width:75px; background-color: dodgerBlue; border-radius: 12px; padding-left: 15px;">
+					<a style="text-align: right; color: white; font-size: 14px; font-weight: normal;" href="#">more</a>
+				</div>
+				<div style="margin-top: 10px; margin-bottom: 10px; background-color: #ddd; padding: 10px;">
+					<img src="images/contact-icon-1.png" width="20px" height="20px"> 
+					Name of Quiz master
+				</div>
+				<div style="text-align: right">
+					<button>REGISTER</button>
+				</div>
 			</div>
-			<div>
-				<label>Date</label>
-				<label>Time</label>
+			<div class="quiz_card">
+				<label style="background-color: green">Date</label>
+				<label style="background-color: green">Time</label>
 				<h3>Name of Quiz</h3>
 				<p>Rules of the quiz</p>
 				<ul>
 					<li>30 mins</li>
 					<li>Anything</li>
 				</ul>
-				<label>Rate/-</label>
+				<label style="background-color: orange">Rate/-</label>
 				<ul>
 					<li>topic1</li>
 					<li>topic2</li>
 					<li>topic3</li>
 				</ul>
-				<a href="#">more</a>
-				<img src="images/contact-icon-1.png" width="20px" height="20px">
-				Name of Quiz master
-				<button>REGISTER</button>
+				<div style="text-align: right; width:75px; background-color: dodgerBlue; border-radius: 12px; padding-left: 15px;">
+					<a style="text-align: right; color: white; font-size: 14px; font-weight: normal;" href="#">more</a>
+				</div>
+				<div style="margin-top: 10px; margin-bottom: 10px; background-color: #ddd; padding: 10px;">
+					<img src="images/contact-icon-1.png" width="20px" height="20px"> 
+					Name of Quiz master
+				</div>
+				<div style="text-align: right">
+					<button>REGISTER</button>
+				</div>
 			</div>
-			<div>
-				<label>Date</label>
-				<label>Time</label>
+			<div class="quiz_card">
+				<label style="background-color: green">Date</label>
+				<label style="background-color: green">Time</label>
 				<h3>Name of Quiz</h3>
 				<p>Rules of the quiz</p>
 				<ul>
 					<li>30 mins</li>
 					<li>Anything</li>
 				</ul>
-				<label>Rate/-</label>
+				<label style="background-color: orange">Rate/-</label>
 				<ul>
 					<li>topic1</li>
 					<li>topic2</li>
 					<li>topic3</li>
 				</ul>
-				<a href="#">more</a>
-				<img src="images/contact-icon-1.png" width="20px" height="20px">
-				Name of Quiz master
-				<button>REGISTER</button>
+				<div style="text-align: right; width:75px; background-color: dodgerBlue; border-radius: 12px; padding-left: 15px;">
+					<a style="text-align: right; color: white; font-size: 14px; font-weight: normal;" href="#">more</a>
+				</div>
+				<div style="margin-top: 10px; margin-bottom: 10px; background-color: #ddd; padding: 10px;">
+					<img src="images/contact-icon-1.png" width="20px" height="20px"> 
+					Name of Quiz master
+				</div>
+				<div style="text-align: right">
+					<button>REGISTER</button>
+				</div>
 			</div>
+			<div class="quiz_card">
+				<label style="background-color: green">Date</label>
+				<label style="background-color: green">Time</label>
+				<h3>Name of Quiz</h3>
+				<p>Rules of the quiz</p>
+				<ul>
+					<li>30 mins</li>
+					<li>Anything</li>
+				</ul>
+				<label style="background-color: orange">Rate/-</label>
+				<ul>
+					<li>topic1</li>
+					<li>topic2</li>
+					<li>topic3</li>
+				</ul>
+				<div style="text-align: right; width:75px; background-color: dodgerBlue; border-radius: 12px; padding-left: 15px;">
+					<a style="text-align: right; color: white; font-size: 14px; font-weight: normal;" href="#">more</a>
+				</div>
+				<div style="margin-top: 10px; margin-bottom: 10px; background-color: #ddd; padding: 10px;">
+					<img src="images/contact-icon-1.png" width="20px" height="20px"> 
+					Name of Quiz master
+				</div>
+				<div style="text-align: right">
+					<button>REGISTER</button>
+				</div>
+			</div>
+			<div class="quiz_card">
+				<label style="background-color: green">Date</label>
+				<label style="background-color: green">Time</label>
+				<h3>Name of Quiz</h3>
+				<p>Rules of the quiz</p>
+				<ul>
+					<li>30 mins</li>
+					<li>Anything</li>
+				</ul>
+				<label style="background-color: orange">Rate/-</label>
+				<ul>
+					<li>topic1</li>
+					<li>topic2</li>
+					<li>topic3</li>
+				</ul>
+				<div style="text-align: right; width:75px; background-color: dodgerBlue; border-radius: 12px; padding-left: 15px;">
+					<a style="text-align: right; color: white; font-size: 14px; font-weight: normal;" href="#">more</a>
+				</div>
+				<div style="margin-top: 10px; margin-bottom: 10px; background-color: #ddd; padding: 10px;">
+					<img src="images/contact-icon-1.png" width="20px" height="20px"> 
+					Name of Quiz master
+				</div>
+				<div style="text-align: right">
+					<button>REGISTER</button>
+				</div>
+			</div>
+			<div class="quiz_card">
+				<label style="background-color: green">Date</label>
+				<label style="background-color: green">Time</label>
+				<h3>Name of Quiz</h3>
+				<p>Rules of the quiz</p>
+				<ul>
+					<li>30 mins</li>
+					<li>Anything</li>
+				</ul>
+				<label style="background-color: orange">Rate/-</label>
+				<ul>
+					<li>topic1</li>
+					<li>topic2</li>
+					<li>topic3</li>
+				</ul>
+				<div style="text-align: right; width:75px; background-color: dodgerBlue; border-radius: 12px; padding-left: 15px;">
+					<a style="text-align: right; color: white; font-size: 14px; font-weight: normal;" href="#">more</a>
+				</div>
+				<div style="margin-top: 10px; margin-bottom: 10px; background-color: #ddd; padding: 10px;">
+					<img src="images/contact-icon-1.png" width="20px" height="20px"> 
+					Name of Quiz master
+				</div>
+				<div style="text-align: right">
+					<button>REGISTER</button>
+				</div>
+			</div>
+
 		</div>
 	</section>
 
 	<!-- Create Quiz Section -->
-	<section class="container mt-5">
+	<section id="create_quiz" class="container">
 		<h2>Create Quiz</h2>
 		<hr>
 		<p>Make your own quiz. Be the quiz Master.</p>
-
+		<br><br>
 		<div>
 			<form>
-				<input type="text" name="quiz_name">
+				<input type="text" name="quiz_name" placeholder="name of quiz"><br>
 				<input type="submit" name="create_quiz" value="CREATE QUIZ">
 			</form>
 		</div>
+		<br><br>
 	</section>
 
 	<!-- Help Section -->
-	<section class="container mt-5">
+	<section id="help" class="container">
 		<h2>HELP</h2>
+		<hr>
 		<p>We are always here to help you.</p>
 
 		<div>
