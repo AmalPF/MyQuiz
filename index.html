@@ -355,78 +355,82 @@
 		<p>We are always here to help you.</p>
 
 		<div>
-			<div>
-				<img src="images/male-profile-3.png" alt="profile" height="150px" width="150px">
-				<label>Name1</label>
+			<div class="card">
+				<div style="margin: 10px;">
+					<img src="images/male-profile-3.png" alt="profile" height="150px" width="150px">
+				</div>
+				<label style="color: dodgerBlue; font-weight: bolder;">Name1</label>
 				<p>Helper1</p>
 				<p>Pleasure to help.</p>
-				<button>CONTACT</button>
+				<button class="btn btn-primary">CONTACT</button>
 			</div>
-			<div>
-				<img src="images/female-profile-2.png" alt="profile" height="150px" width="150px">
-				<label>Name1</label>
+			<div class="card">
+				<div style="margin: 10px;">
+					<img src="images/female-profile-2.png" alt="profile" height="150px" width="150px">
+				</div>
+				<label style="color: dodgerBlue; font-weight: bolder;">Name1</label>
 				<p>Helper2</p>
 				<p>Pleasure to help.</p>
-				<button>CONTACT</button>
+				<button class="btn btn-primary">CONTACT</button>
 			</div>
-			<div>
-				<img src="images/female-profile-3.png" alt="profile" height="150px" width="150px">
-				<label>Name1</label>
+			<div class="card">
+				<div style="margin: 10px;">
+					<img src="images/female-profile-3.png" alt="profile" height="150px" width="150px">
+				</div>
+				<label style="color: dodgerBlue; font-weight: bolder;">Name1</label>
 				<p>Helper3</p>
 				<p>Pleasure to help.</p>
-				<button>CONTACT</button>
+				<button class="btn btn-primary">CONTACT</button>
 			</div>
 		</div>
 	</section>
 
 	<!-- Feedback form -->
-	<section class="container mt-5">
+	<section id="feedback" class="container">
 		<h2>Feedback</h2>
 		<hr>
 		<div>
-			<div>
-				<p>Feedback1......</p>
-				<img src="images/contact-icon-2.png" width="20px" height="20px">
-				<label>User1</label>
+			<div class="card">
+				<p style="color: #888; font-style: italic;">Feedback1......</p>
+				<div style="text-align: right;">
+					<img src="images/contact-icon-2.png" width="20px" height="20px">
+					<label>User1</label>
+				</div>
 			</div>
-			<div>
-				<p>Feedback2......</p>
-				<img src="images/contact-icon-2.png" width="20px" height="20px">
-				<label>User2</label>
+			<div class="card">
+				<p style="color: #888; font-style: italic;">Feedback2......</p>
+				<div style="text-align: right;">
+					<img src="images/contact-icon-2.png" width="20px" height="20px">
+					<label>User2</label>
+				</div>
 			</div>
 		</div>
-		<div>
+		<div style="margin-top: 30px; padding-left: 10%; padding-right: 10%">
 			<form>
-				<textarea></textarea>
-				<input type="submit" name="feedback_submit" value="POST">
+				<textarea class="form-control" style="resize: none;"></textarea>
+				<input style="display: block;" class="btn btn-success" type="submit" name="feedback_submit" value="POST">
 			</form>
 		</div>
 	</section>
 
 	<!-- Footer Section -->
-	<footer>
-		<div>
-			<div>
+	<footer id="footer">
+		<div style="background-color: #2699FB; padding: 20px;">
+			<div style="display: inline-block;">
 				<h5>Subscribe to Quiz via Email</h5>
 				<p>Subscribe to quizzes, new update and news.</p>
 				<form>
-					<input type="email" name="subscribe_emial">
-					<input type="submit" name="subscribe" value="SUBSCRIBE">
+					<input class="form-control" type="email" name="subscribe_emial">
+					<input class="btn btn-dark mt-2" type="submit" name="subscribe" value="SUBSCRIBE">
 				</form>
 			</div>
-			<div>
-				<h5>CONTACT US</h5>
-				<p>+91 123456789</p>
-				<p>myquiz@email.com</p>
-				<a href="#">Create Quiz</a>
-			</div>
-			<div>
+			<div style="float: right;padding-left: 5%;">
 				<h5>CUSTOMER SERVICE</h5>
 				<a href="#">Contact Us</a>
 				<a href="#">Registering & Payment</a>
 				<a href="#">FAQ</a>
 			</div>
-			<div>
+			<div style="float: right;padding-left: 5%;">
 				<h5>INFORMATION</h5>
 				<p>MyQuiz</p>
 				<a href="#">Work With Us</a>
@@ -434,13 +438,19 @@
 				<a href="#">Terms & Conditions</a>
 				<a href="#">Enquiries</a>
 			</div>
+			<div style="float: right;padding-left: 5%;">
+				<h5>CONTACT US</h5>
+				<p>+91 123456789</p>
+				<p>myquiz@email.com</p>
+				<a href="#">Create Quiz</a>
+			</div>			
 		</div>
-		<div>
-			<p>Copyright &copy; MyQuiz 2020</p>
-			<div>
-				<img src="images/instagram-icon-bw.png" alt="instagram" width="25px" height="25px">
-				<img src="images/twitter-icon-bw.png" alt="twitter" width="28px" height="28px">
-				<img src="images/facebook-icon-bw.png" alt="facebook" width="28px" height="28px">
+		<div style="background-color: black; height:50px;">
+			<p style="display: inline-block; margin-left: 10px; padding: 10px;">Copyright &copy; MyQuiz 2020</p>
+			<div style="float: right;">
+				<img src="images/instagram-icon-bw.png" alt="instagram" width="48px" height="35px">&nbsp;
+				<img src="images/twitter-icon-bw.png" alt="twitter" width="22px" height="22px">
+				<img src="images/facebook-icon-bw.png" alt="facebook" width="44px" height="44px">
 			</div>
 		</div>
 	</footer>
